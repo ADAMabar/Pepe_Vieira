@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Ficha del producto Pepe Vieira. Consulta detalles, ingredientes y confirma tu pedido gourmet de forma rápida y sencilla.">
+  <title>Ficha de Producto | Pepe Vieira</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="estilo2.css">
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+  <header>
+    <a href="../Pagina_Info/Pagina_info.html">
+      <picture>
+        <source srcset="../Iconos/Logo.inverso.svg" media="(prefers-color-scheme: light)">
+        <img class="logo" src="../Iconos/Logo.svg" alt="Logo de la marca">
+      </picture>
+    </a>
+
+    <button class="hamburger-menu" id="hamburger-btn" aria-label="Abrir menú">
+      <i class="bi bi-list"></i>
+    </button>
+
+    <nav class="nav-links" id="nav-links">
+      <a href="#"><i class="bi bi-gear-fill"></i> Menú</a>
+      <a href="../Pagina_Info/Pagina_info.html"><i class="bi bi-person-fill"></i> Contacto</a>
+    </nav>
+  </header>
+
+  <section class="hero-container">
+    <section class="hero">
+      <div id="carruselHero" class="carousel slide carousel-fade h-100" data-bs-ride="carousel" data-bs-interval="4000">
+        <div class="carousel-indicators z-3">
+          <button type="button" data-bs-target="#carruselHero" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carruselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carruselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+
+        <div class="carousel-inner h-100">
+          <div class="carousel-item active h-100">
+            <picture>
+              <source media="(prefers-color-scheme: dark)" srcset="../img/hero_pequeño/fondoClaroLogoMorado_500x250.png 500w,
+                    ../img/hero_mediano/fondoClaroLogoMorado_1000x250.png 1000w,
+                    ../img/hero_grande/fondoClaroLogoMorado_3000x1500.png 3000w" sizes="100vw">
+              <img src="../img/hero_mediano/fondoHeroNegroLogoBlanco_1000x250.png" srcset="../img/hero_pequeño/fondoHeroNegroLogoBlanco_500x250.png 500w,
+                    ../img/hero_mediano/fondoHeroNegroLogoBlanco_1000x250.png 1000w,
+                    ../img/hero_grande/fondoHeroNegroLogoBlanco_3000x1500.png 3000w" sizes="100vw" loading="eager"
+                alt="creditos de foto: prexels" class="d-block w-100 h-100" style="object-fit: cover;">
+            </picture>
+          </div>
+
+          <div class="carousel-item h-100">
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?q=80&w=2070&auto=format&fit=crop"
+              class="d-block w-100 h-100" style="object-fit: cover;" alt="Plato gourmet 2">
+          </div>
+
+          <div class="carousel-item h-100">
+            <img src="https://images.unsplash.com/photo-1550966871-3ed3cdb5ed0c?q=80&w=2070&auto=format&fit=crop"
+              class="d-block w-100 h-100" style="object-fit: cover;" alt="Interior del restaurante">
+          </div>
+        </div>
+
+        <button class="carousel-control-prev z-3" type="button" data-bs-target="#carruselHero" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next z-3" type="button" data-bs-target="#carruselHero" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
+    </section>
+
+    <div class="hero-overlay pe-none"></div>
+
+    <div class="hero-cta-content">
+      <h1>𝓟𝓮𝓹𝓮 𝓥𝓲𝓮𝓲𝓻𝓪 </h1>
+      <p>𝓛𝓪 𝓾𝓵𝓽𝓲𝓶𝓪 𝓬𝓸𝓬𝓲𝓷𝓪 𝓭𝓮𝓵 𝓶𝓾𝓷𝓭𝓸.</p>
+      <a href="#" class="btn-cta">HAZ TU PEDIDO</a>
+    </div>
+  </section>
+  <div class="animated-separator"></div>
+
+  <nav class="nav-bar">
+    <div  class="link-sobre-nosotros">
+      <a href="../Pagina_Info/Pagina_info.html">Sobre Nosotros</a>
+    </div>
+    <div class=" link-nuestros-platos">
+      <a href="../Pagina_De_Busqueda/Pagina_busqueda.html">Nuestros Platos</a>
+    </div>
+    <div class="cart position-relative" style="font-size: 25px;">
+      <a href="#" title="Carrito" aria-label="Ver carrito de compras"><i class="bi bi-cart-fill text-white"></i></a>
+      <span class="position-absolute top-0 start-10 translate-middle badge rounded-pill bg-danger"
+        style="font-size: 0.6rem;">
+        0
+        <span class="visually-hidden">Artículos en el carrito</span>
+      </span>
+    </div>
+  </nav>
+
+  <div class="search-cart">
+    <div class="search-box">
+      <input type="text" placeholder="Buscar...">
+      <button><i class="bi bi-search"></i></button>
+    </div>
+  </div>
+
+  <main id="main-content" tabindex="-1">
+    <div class="product-left">
+      <div class="product-card">
+        <img src="../img/public/Productos_Med/Hamburguer_600X600.jpg" srcset="../img/public/Productos_peque/Hamburguer_300x300.jpg 300w,
+                ../img/public/Productos_Med/Hamburguer_600X600.jpg 600w,
+                ../img/public/Productos_grand/Hamburguer_800x800.jpg 800w"
+          sizes="(max-width: 500px) 300px, (max-width: 900px) 600px, 800px" loading="lazy" alt="Hamburguesa Gourmet"
+          class="product-image">
+        <div class="product-info">
+          <h1>Hamburguesa Gourmet</h1>
+          <p class="product-price">6€</p>
+          <p>Nuestra salsa secreta <strong>"Vieira's Touch"</strong> aporta un sabor ahumado y cremoso inconfundible.
+            Perfecta para los amantes de los sabores intensos y de calidad.</p>
+          <ul class="product-details">
+            <li><strong>Peso:</strong> 200g de carne ecológica</li>
+            <li><strong>Calorías:</strong> 520 kcal por porción</li>
+            <li><strong>Acompañamiento:</strong> Patatas rústicas y ensalada verde</li>
+          </ul>
+        </div>
+        <div class="valoracion-estrellas mt-2" data-producto="Hamburguesa Gourmet">
+        <p class="mb-1 small fw-bold">¿Qué te parece este plato?</p>
+        <div class="estrellas">
+          <i class="bi bi-star estrella" data-valor="1"></i>
+          <i class="bi bi-star estrella" data-valor="2"></i>
+          <i class="bi bi-star estrella" data-valor="3"></i>
+          <i class="bi bi-star estrella" data-valor="4"></i>
+          <i class="bi bi-star estrella" data-valor="5"></i>
+        </div>
+        <p class="valoracion-msg small text-muted mt-1"></p>
+      </div>
+        <button class="btn btn-danger eliminar-btn">Eliminar de la cesta</button>
+      </div>
+
+      <div class="product-card">
+        <img src="../img/public/Productos_Med/CaesarSalad_600X600.jpg" srcset="../img/public/Productos_peque/CaesarSalad_300x300.jpg 300w,
+                ../img/public/Productos_Med/CaesarSalad_600X600.jpg 600w,
+                ../img/public/Productos_grand/CaesarSalad_800x800.jpg 800w"
+          sizes="(max-width: 500px) 300px, (max-width: 900px) 600px, 800px" loading="lazy" alt="Ensalada César"
+          class="product-image">
+        <div class="product-info">
+          <h1>Ensalada César</h1>
+          <p class="product-price">7€</p>
+          <p class="product-description">Una reinterpretación fresca y elegante de la clásica <strong>ensalada
+              César</strong>, con <strong>pollo a la parrilla marinado en hierbas mediterráneas</strong>, <strong>queso
+              parmesano curado</strong> y crujientes <strong>picatostes caseros</strong>.</p>
+          <ul class="product-details">
+            <li> <strong>Porción:</strong> 350g</li>
+            <li><strong>Calorías:</strong> 410 kcal</li>
+            <li><strong>Ideal para:</strong> comidas ligeras o acompañamientos gourmet</li>
+          </ul>
+        </div>
+        <div class="valoracion-estrellas mt-2" data-producto="Hamburguesa Gourmet">
+        <p class="mb-1 small fw-bold">¿Qué te parece este plato?</p>
+        <div class="estrellas">
+          <i class="bi bi-star estrella" data-valor="1"></i>
+          <i class="bi bi-star estrella" data-valor="2"></i>
+          <i class="bi bi-star estrella" data-valor="3"></i>
+          <i class="bi bi-star estrella" data-valor="4"></i>
+          <i class="bi bi-star estrella" data-valor="5"></i>
+        </div>
+        <p class="valoracion-msg small text-muted mt-1"></p>
+      </div>
+        <button class="btn btn-danger eliminar-btn">Eliminar de la cesta</button>
+      </div>
+    </div>
+
+    <div class="product-right">
+      <div class="cart-summary">
+        <div class="alert alert-warning" role="alert">
+          ¡Atención! Algunos productos están próximos a agotarse.
+        </div>
+        <label for="codigo-descuento">Código de descuento</label>
+        <input type="text" id="codigo-descuento" placeholder="codigo de descuento">
+        <div class="cart-items">
+        </div>
+        <p>IVA: 10% <span>0.00€</span></p>
+        <h2>Total: <span>0.00€</span></h2>
+        <button type="button" class="btn btn-success btn-lg w-100">Confirmar Compra</button>
+      </div>
+    </div>
+  </main>
+
+  <footer id="footer">
+    <div class="contacto">
+      <a href="../Pagina_Info/Pagina_info.html"><i class="bi bi-telephone-fill"></i> Contacto</a>
+      <a href="#"><i class="bi bi-share-fill"></i> Redes Sociales</a>
+      <a href="#"><i class="bi bi-geo-alt-fill"></i> Ubicación</a>
+    </div>
+
+    <div class="arroba">
+      <p>© 2025 Pepe Vieira</p>
+    </div>
+  </footer>
+
+  <div class="modal fade" id="lightboxModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0 text-center position-relative">
+          <img src="" id="lightboxImage" class="img-fluid rounded shadow" alt="Imagen ampliada">
+          <button type="button" class="btn-close btn-close-white position-absolute top-0 end-0 m-3"
+            data-bs-dismiss="modal" aria-label="Cerrar"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3" style="z-index: 1055; margin-bottom: 80px;">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+      <div class="toast-header bg-warning text-dark">
+        <i class="bi bi-info-circle-fill me-2"></i>
+        <strong class="me-auto">Info Pepe Vieira</strong>
+        <small>Ahora</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body" id="toastMessage">
+        Mensaje.
+      </div>
+    </div>
+  </div>
+
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+    <div class="offcanvas-header bg-dark text-white">
+      <h5 class="offcanvas-title" id="cartOffcanvasLabel"><i class="bi bi-cart-fill text-warning"></i> Tu Pedido</h5>
+      <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body d-flex flex-column">
+      <div id="cart-items-container" class="flex-grow-1 overflow-auto">
+        <p class="text-muted text-center mt-4">El carrito está vacío.</p>
+      </div>
+      <div class="border-top pt-3 mt-3">
+        <div class="d-flex justify-content-between fs-5 fw-bold mb-3">
+          <span>Total:</span>
+          <span id="cart-total-price">0.00€</span>
+        </div>
+        <a href="../Pagina_FichaProducto/Ficha_Producto.html" class="btn btn-warning w-100 fw-bold shadow-sm">Finalizar Pedido</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="deleteConfirmModal" tabindex="-1" aria-labelledby="deleteConfirmModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header bg-danger text-white">
+          <h5 class="modal-title" id="deleteConfirmModalLabel">Confirmar eliminación</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          ¿Estás seguro de que deseas eliminar <strong id="product-to-delete-name">este producto</strong> de tu pedido?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-danger" id="confirm-delete-btn">Sí, eliminar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" defer></script>
+
+  <script>
+    class ShoppingCart {
+      key;
+      carritoActual;
+      constructor(key = "carrito") {
+        this.key = key;
+        this.carritoActual = this.getCart();
+      }
+
+      getCart() {
+        let carritoMemoria = localStorage.getItem(this.key);
+        if (carritoMemoria == null) {
+          return new Map();
+        } else {
+          return new Map(Object.entries(JSON.parse(carritoMemoria)));
+        }
+      }
+
+      updateLocalStorage() {
+        localStorage.setItem(this.key, JSON.stringify(Object.fromEntries(this.carritoActual)));
+      }
+
+      getNumberElementInCarrito(name) {
+        return this.carritoActual.has(name) ? this.carritoActual.get(name) : 0;
+      }
+
+      carritoAumentar(nombreLibro) {
+        this.carritoActual.set(nombreLibro, (this.carritoActual.get(nombreLibro) || 0) + 1);
+        this.updateLocalStorage();
+      }
+
+      carritoReducir(nombreLibro) {
+        if (this.carritoActual.has(nombreLibro)) {
+          let nuevoValor = this.carritoActual.get(nombreLibro) - 1;
+          if (nuevoValor > 0) {
+            this.carritoActual.set(nombreLibro, nuevoValor);
+          } else {
+            this.carritoActual.delete(nombreLibro);
+          }
+        }
+        this.updateLocalStorage();
+      }
+
+      carritoEliminar(nombreLibro) {
+        this.carritoActual.delete(nombreLibro);
+        this.updateLocalStorage();
+      }
+
+      carritoModificarValor(nombreLibro, value) {
+        if (value > 0) {
+          this.carritoActual.set(nombreLibro, value);
+        } else {
+          this.carritoActual.delete(nombreLibro);
+        }
+        this.updateLocalStorage();
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+      const miCarrito = new ShoppingCart("carritoPepeVieira");
+      let catalogoPrecios = JSON.parse(localStorage.getItem('preciosPepeVieira')) || {};
+
+      const cartBadge = document.querySelector('.cart .badge');
+      const cartIconLink = document.querySelector('.cart a');
+      const cartItemsContainer = document.getElementById('cart-items-container');
+      const cartTotalPrice = document.getElementById('cart-total-price');
+      const mainCartItems = document.querySelector('.cart-items');
+      const mainIva = document.querySelector('.cart-summary > p span');
+      const mainTotal = document.querySelector('.cart-summary h2 span');
+      
+      let cartOffcanvasElement = document.getElementById('cartOffcanvas');
+      let cartOffcanvas = null;
+      if (cartOffcanvasElement) {
+        cartOffcanvas = new bootstrap.Offcanvas(cartOffcanvasElement);
+      }
+      
+      const deleteModalElement = document.getElementById('deleteConfirmModal');
+      const deleteModal = new bootstrap.Modal(deleteModalElement);
+      
+      let itemToDeleteName = null;
+
+      actualizarBadge();
+      renderizarCarrito();
+
+      if (cartIconLink && cartOffcanvas) {
+        cartIconLink.addEventListener('click', function (e) {
+          e.preventDefault(); 
+          renderizarCarrito();
+          cartOffcanvas.show();
+        });
+      }
+
+      function actualizarBadge() {
+        let totalItems = 0;
+        for (let cantidad of miCarrito.carritoActual.values()) {
+          totalItems += cantidad;
+        }
+        if (cartBadge) {
+          cartBadge.textContent = totalItems;
+        }
+      }
+
+      function renderizarCarrito() {
+        let precioTotalCarrito = 0;
+        let htmlOffcanvas = '<ul class="list-group list-group-flush">';
+        let htmlMain = '';
+
+        if (miCarrito.carritoActual.size === 0) {
+          if (cartItemsContainer) cartItemsContainer.innerHTML = '<p class="text-muted text-center mt-4">Tu carrito está vacío.</p>';
+          if (cartTotalPrice) cartTotalPrice.textContent = '0.00€';
+          
+          if (mainCartItems) mainCartItems.innerHTML = '<p>Tu cesta está vacía</p>';
+          if (mainIva) mainIva.textContent = '0.00€';
+          if (mainTotal) mainTotal.textContent = '0.00€';
+          return;
+        }
+
+        miCarrito.carritoActual.forEach((cantidad, nombre) => {
+          const precioUnitario = catalogoPrecios[nombre] || 0;
+          const precioTotalItem = precioUnitario * cantidad;
+          precioTotalCarrito += precioTotalItem;
+
+          htmlOffcanvas += `
+            <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+              <div>
+                <h6 class="my-0">${nombre}</h6>
+                <small class="text-muted">${precioUnitario.toFixed(2)}€ x ${cantidad}</small>
+              </div>
+              <div class="d-flex align-items-center">
+                <span class="fw-bold me-3">${precioTotalItem.toFixed(2)}€</span>
+                <button class="btn btn-sm btn-outline-danger btn-eliminar-item" data-nombre="${nombre}">
+                  <i class="bi bi-trash"></i>
+                </button>
+              </div>
+            </li>
+          `;
+
+          htmlMain += `<p>${nombre} (x${cantidad}) <span>${precioTotalItem.toFixed(2)}€</span></p>`;
+        });
+        
+        htmlOffcanvas += '</ul>';
+
+        if (cartItemsContainer) {
+          cartItemsContainer.innerHTML = htmlOffcanvas;
+          document.querySelectorAll('.btn-eliminar-item').forEach(btn => {
+            btn.addEventListener('click', function() {
+              itemToDeleteName = this.getAttribute('data-nombre');
+              document.getElementById('product-to-delete-name').textContent = itemToDeleteName;
+              deleteModal.show();
+            });
+          });
+        }
+        if (cartTotalPrice) cartTotalPrice.textContent = precioTotalCarrito.toFixed(2) + '€';
+
+        if (mainCartItems) {
+          mainCartItems.innerHTML = htmlMain;
+          const iva = precioTotalCarrito * 0.10;
+          const total = precioTotalCarrito + iva;
+          if (mainIva) mainIva.textContent = iva.toFixed(2) + '€';
+          if (mainTotal) mainTotal.textContent = total.toFixed(2) + '€';
+        }
+      }
+
+      document.querySelectorAll('.eliminar-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+          const card = this.closest('.product-card');
+          const nombre = card.querySelector('h1').textContent.trim();
+          itemToDeleteName = nombre;
+          document.getElementById('product-to-delete-name').textContent = nombre;
+          deleteModal.show();
+        });
+      });
+
+      document.getElementById('confirm-delete-btn').addEventListener('click', function () {
+        if (itemToDeleteName !== null) {
+          miCarrito.carritoEliminar(itemToDeleteName);
+          actualizarBadge();
+          renderizarCarrito(); 
+          deleteModal.hide(); 
+          itemToDeleteName = null;
+        }
+      });
+
+      const toastEl = document.getElementById('liveToast');
+      const toastMessage = document.getElementById('toastMessage');
+      const toast = new bootstrap.Toast(toastEl, { delay: 3000 });
+
+      function showFeedback(msg) {
+        toastMessage.textContent = msg;
+        toast.show();
+      }
+
+      document.body.addEventListener('click', function (e) {
+        const target = e.target.closest('button, .btn-cta, .nav-link, .cart a');
+        if (!target) return;
+
+        if (target.closest('#deleteConfirmModal') || target.closest('.btn-eliminar-item') || target.classList.contains('eliminar-btn')) {
+            return; 
+        }
+
+        let message = "Acción procesada";
+
+        if (target.classList.contains('btn-cta')) {
+          message = "Abriendo el sistema de pedidos...";
+        } else if (target.id === 'hamburger-btn') {
+          message = "Abriendo navegación móvil";
+        } else if (target.closest('.cart')) {
+          message = "Abriendo tu carrito de compras"; 
+        } else if (target.classList.contains('btn-success')) {
+          message = "¡Procesando tu compra gourmet!";
+        } else if (target.classList.contains('btn-close')) {
+           return;
+        }
+
+        showFeedback(message);
+      });
+
+      document.querySelectorAll('.product-image').forEach(img => {
+        img.style.cursor = 'zoom-in';
+        img.addEventListener('click', function () {
+          const imageUrl = this.src;
+          document.getElementById('lightboxImage').src = imageUrl;
+          const myModal = new bootstrap.Modal(document.getElementById('lightboxModal'));
+          myModal.show();
+        });
+      });
+
+      const hamburgerBtn = document.getElementById('hamburger-btn');
+      const navLinks = document.getElementById('nav-links');
+
+      if (hamburgerBtn && navLinks) {
+        hamburgerBtn.addEventListener('click', function () {
+          navLinks.classList.toggle('active');
+        });
+      };
+
+      document.addEventListener('keydown', function (event) {
+        if (event.altKey && (event.key === 'n' || event.key === 'T')) {
+          event.preventDefault();
+          window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+          });
+        }
+      });
+
+      const mensajes = ["", "Gracias, mejoraremos.", "Bien, seguimos trabajando.", "¡Buena valoración!", "¡Nos alegra mucho!", "¡Perfecto, gracias!"];
+
+      document.querySelectorAll('.valoracion-estrellas').forEach(bloque => {
+        const estrellas = bloque.querySelectorAll('.estrella');
+        const msg = bloque.querySelector('.valoracion-msg');
+
+        estrellas.forEach(estrella => {
+          estrella.addEventListener('mouseover', function () {
+            const val = +this.dataset.valor;
+            estrellas.forEach(e => e.classList.toggle('hover', +e.dataset.valor <= val));
+          });
+
+          estrella.addEventListener('mouseout', () => {
+            estrellas.forEach(e => e.classList.remove('hover'));
+          });
+
+          estrella.addEventListener('click', function () {
+            const val = +this.dataset.valor;
+            estrellas.forEach(e => {
+              e.classList.toggle('activa', +e.dataset.valor <= val);
+              e.classList.replace('bi-star', 'bi-star-fill') || e.classList.replace('bi-star-fill', 'bi-star');
+              if (+e.dataset.valor <= val) e.classList.replace('bi-star', 'bi-star-fill');
+              else e.classList.replace('bi-star-fill', 'bi-star');
+            });
+            msg.textContent = mensajes[val];
+          });
+        });
+      });
+      });
+  </script>
+
+</body>
+</html>
